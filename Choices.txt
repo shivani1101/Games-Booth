@@ -1,0 +1,109 @@
+choice 1
+	go back
+		link back to start
+	go left
+		health --
+	go straight
+		link to choice 2
+			go back
+				link to choice 1
+			go straight
+				health --
+			go left
+				link to choice 3
+					go back
+						link to choice 2
+					go straight
+						health ++
+					go left
+						link to choice 4
+							go back
+								link to choice 3
+							go straight (dead ends)
+								link to choice 4.1
+									go back
+										link to choice 4
+									go left
+										link to choice 4.2
+											go back
+												link to choice 4.1
+											go left
+												health --
+											go right
+												health --
+									go right
+										link to choice 4.3
+											go back
+												link to choice 4.1
+											go left
+												health ++
+											go right
+												link to choice 4.4
+													go back
+														link to choice 4.3
+													go left
+														health --
+													go right
+														link to choice 4.5
+															go back
+																link to choice 4.4
+															go left
+																health = 0
+															go right 
+																health = 0
+							go right
+								link to choice 5
+									go back
+										link to choice 4
+									go left
+										health --
+									go straight
+										link to choice 6
+											go back
+												link to choice 5
+											go straight
+												health --
+											go left
+												link to choice 7
+													go back
+														link to choice 6
+													go straight (dead ends)
+														link to choice 7.1
+															go back
+																link to choice 7
+															go right
+																health ++
+															go left
+																link to choice 7.2
+																	go back
+																		link to choice 7.1
+																	go straight
+																		health --
+																	go right
+																		link to choice 7.3
+																			go back
+																				link to choice 7.2
+																			go right
+																				health ++
+																			go left
+																				link to choice 7.4
+																					go back
+																						link to choice 7.3
+																					go left
+																						health = 0
+																					go right
+																						health = 0 
+													go left
+														link to choice 8
+															go back
+																link to choice 7
+															go straight
+																health ++
+															go right
+																link to choice 9
+																	go back
+																		link to choice 8
+																	go left
+																		health = 0
+																	go straight
+																		win

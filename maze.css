@@ -1,0 +1,43 @@
+div.left {
+    position:absolute;
+    top: 50%;
+    left: 0%;
+}
+div.right {
+    position:absolute;
+    top: 50%;
+    right: 0%;
+}
+div.up {
+    position:absolute;
+    top: 0%;
+    left: 50%;
+}
+div.down {
+    position:absolute;
+    bottom: 0%;
+    left: 50%;
+}
+body {
+    background-image: url('assets/hallway.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50%;
+}
+h1 {
+    text-align: center;
+    color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+img.up,img.down{
+    width: auto;
+    height: 42px;
+}
+img.left,img.right{
+    width: 42px;
+    height: auto;
+}
