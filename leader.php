@@ -13,6 +13,14 @@
 
 
 </style>
+<script> 
+$(document).ready(function() {
+     
+     $("tr").each(function(i) {
+     	$(this).delay(300*i).fadeIn();
+	});
+});
+</script>
 </head>
 
 <body>
@@ -87,7 +95,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 if ($result2->num_rows > 0) {
     // output data of each row
     while($row = $result2->fetch_assoc()) {
-		echo "<tr>";
+		echo "<tr style=' display:none; '>";
         echo "<td>" . $row["ID"] . " </td>" ;
         echo "<td>". $row["name"]  . "</td>" ;
         echo "<td>". $row["score"]  . "</td>" ;
