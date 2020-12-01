@@ -73,7 +73,7 @@ $(document).ready(function() {
         <tbody>
 <?php
 
-$conn = mysqli_connect("localhost", "gsaade", "agyeveym", "gsaade") 
+$conn = mysqli_connect("localhost", "", "", "") 
 or die(mysql_error());
 
 
@@ -108,7 +108,7 @@ if ($result2->num_rows > 0) {
        echo  "</tbod> </table>";
 
 /*
-$conn = mysqli_connect("localhost", "gsaade", "agyeveym", "gsaade") 
+$conn = mysqli_connect("localhost", "", "", "") 
 or die(mysql_error());
 
 $sql3 = "
