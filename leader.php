@@ -123,7 +123,7 @@ if ($result2->num_rows > 0) {
 /*
 examples of creating table and insert queries 
 
-$conn = mysqli_connect("localhost", "gsaade", "agyeveym", "gsaade") 
+$conn = mysqli_connect("localhost", "username", "pass", "username") 
 or die(mysql_error());
 
 $sql3 = "

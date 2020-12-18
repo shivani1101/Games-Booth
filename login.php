@@ -5,7 +5,7 @@
 session_start();
 
 // Create a connection variable that connects to the database
-$conn = mysqli_connect("localhost", "jmiraflo", "miartuc3", "jmiraflo");
+$conn = mysqli_connect("localhost", "username", "pass", "username");
 
 // If there was no connection made, display the error.
 if (!$conn) {
