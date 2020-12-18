@@ -1,0 +1,62 @@
+/*The background of the whole page is set to the image within the file.*/
+body {
+    background-image: url("bgpic.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: 100% 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*The accountBox class where it styles the box to be white and have a curving border.*/
+.accountBox{
+    background-color: white;
+    border: 6px solid white;
+    border-radius: 12px;
+}
+
+/*The style of the logout button at the top right of the form.*/
+.logoutButton{
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 3px;
+    float:right;
+}
+
+/*The background of the logout button will appear with a blue background with white text when hovered over.*/
+.logoutButton:hover{
+    background-color: rgb(35, 66, 202);
+    box-shadow: 5px 5px 5px grey;
+    color: white;
+}
+
+/*The style of the profile picture.*/
+.profilepic{
+    border: 2px solid black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 5px grey;
+    width: 100%;
+}
+
+/*The header style of the entire page displaying "Your Account".*/
+.header{
+    background-image: linear-gradient(to left, rgb(41, 78, 121) , rgb(22, 62, 241));
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 2px;
+    color: white;
+    border: 3px solid black;
+    border-radius: 12px;
+}
+
+/*The responsiveness of the profile picture where it will be 60% in width until the window reaches the max width of 1000px where it will then become 100%.*/
+@media only screen and (max-width: 1000px){
+   .profilepic{
+      width: 60%;
+}
+}
+

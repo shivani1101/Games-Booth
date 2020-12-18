@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: black;
+  }
+  p{
+      color: white;
+  }
+  h2{
+      color: blue;
+  }
+  .header {
+    text-align: center;
+    padding: 32px;
+  }
+  
+  .row {
+    display: -ms-flexbox; /* used flexbox property to make the rows different sizes  */
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns all next to each other */
+  .column {
+    -ms-flex: 50%; 
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns for tablet sized */
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the the col under eachother for small devices  */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+/*overlay effect   */
+
+.overlay{
+    background:rgba(0,0,0,0.7);   /* when image is hover over there is a background fade */
+    position:absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    color: white;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;  /*allows the fade by chnaging the opacity to dark*/
+    transition: opacity 0.5s;
+}
+
+img {
+  display: block;  
+}
+.container {
+    position: relative;
+    display: inline-block;
+}
+
+.container:hover > .overlay {
+    opacity: 1;
+}
+
+
+/*the overlay on text for the News headline*/
+.overlaytext{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: white;
+   
+}
+
+/*Bottom healine-*/
+
+/* Create two columns that floats next to each other */
+.c {
+    float: left;
+    padding: 10px;
+    height: 250px; /* change to height for col*/
+  }
+  
+  .left {
+    width: 60%;
+  }
+  
+  .right {
+    width: 40%;
+  }
+  
+  /* Clear floats after the columns */
+  .r:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  @media screen and (max-width: 600px) {
+    .left {
+    width: 100%;
+  }
+  
+  .right {
+    width: 100%;
+  }
+
+
+  }
+  .r{
+    border: 1px solid darkred; 
+  }
+  .news2img{
+      height: 230px;
+      width: 400px;
+      
+  }
+
+h2:hover{
+    color: red;
+}
+
+

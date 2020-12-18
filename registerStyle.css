@@ -1,0 +1,94 @@
+/*The background of the whole page is set to the image within the file.*/
+body {
+   background-image: url("bgpic.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   background-size: 100% 100%;
+   height: 100%;
+   margin: 0;
+   padding: 0;
+}
+
+/*Every text that uses the element <p> is inline.*/
+p{
+   display:inline;
+}
+/*The asterisk class where the text appears as red and is inlined. (Used to highlight the importance of the information within the form).*/
+.asterisk{
+   color:red;
+   display:inline;
+}
+/*The back button class*/
+.backButton{
+   font-weight: bold;
+   text-decoration: underline;
+   padding: 3px;
+   float:left;
+}
+
+/*The text of the back button will appear as black when hovered over.*/
+.backButton:hover{
+   color: black;
+}
+
+ /*The design of the register box.*/
+ .registerBox{
+    
+    border: 2px solid black;
+    top: 50%;
+    left: 50%;
+    padding: 50px 30px;
+    width: 900px;
+    max-width: 1000px;
+    max-height: 700px;
+    background: white;
+    position: absolute;
+    box-sizing: border-box;
+    transform: translate(-50%, -50%);
+ 
+ }
+
+ /*Aligns the text to the center*/
+ .centerText{
+     text-align:center;
+     margin: 0;
+     padding: 0 0 20px;
+ }
+
+ /*For every input element within the registerBox class will hold these styles.*/
+ .registerBox input{
+    width: 100%;
+    margin-bottom: 20px;
+ }
+
+ /*To make the input boxes of the form transparent.*/
+ .transparentInput{
+    border: 0;
+    border-bottom:1px solid black;
+    height: 40px;
+    background:transparent;
+    padding:8px 0 5px 0;
+    outline: none;
+ }
+ 
+ /*The style of the register button at the bottom of the form.*/
+ .registerButton{
+   background-color: blue;
+   border: none;
+   color: white;
+   padding: 5px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+   border-radius: 12px;
+ }
+
+ /*The background of the register button will appear as a lighter blue when hovered over.*/
+ .registerButton:hover{
+    background-color: rgb(21, 55, 247);
+ }
+ 

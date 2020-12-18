@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <!-- This is the wall page -->
+        <title>Wall</title>
+        <meta charset="utf-8">
+        <!-- links to relative scripts and styles -->
+        <link rel="stylesheet" href="main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="jquery.cookie.js"></script>
+        <script src="counter.js"></script>
+    </head>
+    <body>
+        <!-- Tells user what happened -->
+        <h1>You hit a wall, maybe don't do that.</h1>
+        <!-- P tag for keeping score -->
+        <p style="font-size: 5em; color: crimson;" id="scora"></p>
+        <!-- javascript to go back to the previous link -->
+        <a href="javascript:history.go(-1)"><img src="assets/back.png" alt="back icon"></a>
+    </body>
+</html>

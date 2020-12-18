@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- This is win page -->
+    <title>Win</title>
+    <meta charset="utf-8">
+    <!-- Relative links to the styles and scripts -->
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery.cookie.js"></script>
+    <script src="counter.js"></script>
+    <!-- Script to input the score to the leaderboard -->
+    <script>
+        $(document).ready(function () {
+            $(function () {
+
+                $("input[name=id]").val(61);
+                $("input[name=name]").val("gigi");
+                $("input[name=score]").val(parseInt($.cookie('clicks')));
+
+                $('#scoreee').submit();
+                alert("Your Score Has Been Submitted");
+                $.cookie('clicks', '0', { path: '/' });
+
+            });
+            $.cookie('clicks', '0', { path: '/' });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Tells the user they won -->
+    <h1>You Won! Click to play again</h1>
+    <!-- p element for score -->
+    <p style="font-size: 5em; color: crimson;" id="scora"></p>
+    <!-- link back to start -->
+    <a href="start.html"><img src="assets/restart.png" alt="restart icon"></a>
+</body>
+
+</html>

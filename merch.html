@@ -1,0 +1,117 @@
+<!DOCTYPE html> <!--Marchanidise Page-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merchandise</title>
+    <link rel="stylesheet" href="merch.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">  <!--font from google fonts API-->
+</head>
+<body>
+    <h1 style="color: red; text-align: center; font-family: 'Press Start 2P', cursive; margin-left: 20px; margin-right: 20px;">Game Booths's Merchandise</h1>
+    <div class="row">
+        <div class="column" style="padding: 10px;">
+          <div class="inside" style=" height: 550px; text-align: center ;">
+              
+              
+              <!-- slideshow for the hoodies--->
+              <div class="slideshow-container">
+                <div class="mySlides1">
+                  <img src="Images/merch_red.jpg" style="width:100%; height: 550px;">
+                </div>
+              
+                <div class="mySlides1">
+                  <img src="Images/merch_black.jpg" style="width:100%; height: 550px;">
+                </div>
+              
+                <div class="mySlides1">
+                  <img src="Images/merch_blue.jpg" style="width:100%; height: 550px;">
+                </div>
+              
+                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>  <!--calls the plsuSLides fucntion when arrows are clicked-->
+                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+              </div>
+             
+          </div>
+          
+        </div>
+
+        <div class="column" style=" padding: 10px;">
+
+          <div class="inside" style="border: 1px solid darkred; border-radius: 10px; height: 550px;">
+            
+            <div class="part2info"> <!--info and description for the products -->
+                <h4 style="color: blue; ">Maze Booth's Customized hoodie</h4>
+            
+                <p style="font-size: 25px; color: orange;">Price: CDN: $20.00</p>
+                <p style="color: green; font-size: 15px;">In stock</p>
+                <p >Description</p>
+                
+                    <ul>
+                        <li>60% Cotton, 48% Polyester</li>
+                        <li>No Closure closure</li>
+                        <li>Machine Wash</li>
+                        <li>This everyday-classic pullover hoodie sweatshirt features long sleeves, a kangaroo pocket, drawstring hood and wide ribbed hem and cuffs to lock in warmth</li>
+                        <li> Everyday made better: we listen to customer feedback and fine-tune every detail to ensure quality, fit, and comfort</li>
+                        <li>Model is 6'2" and wearing size Medium</li>
+                    </ul>
+
+            <!--form to enter the color (radio button) -->
+            <form>
+
+                Color: <input type="radio" id="male" name="gender" value="male">
+                <label for="red">Red</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="blue">Blue</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="black">Black</label>
+                <br>
+              </form> 
+              <!--form to enter size of hoodie (radio button)-->
+              <form>
+                Size: <input type="radio" id="male" name="gender" value="male">
+                <label for="s">Small</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="m">Medium</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="l">Large</label>
+                
+              </form> <br>
+                <div class="buttondiv" style="text-align: center;">
+                    
+                    <button class="buybutton" onclick="window.location.href='buynow.html'">BUY NOW</button>  <!--buy now button-->
+                    
+                </div>
+               
+            </div>
+        </div>
+        </div>
+      </div>
+
+      <!-- javascript FOR div one-slideshow -->
+
+      <script>   //just embedded the javascript here instead of creating new js file
+        var slideIndex = [1,1];
+        var slideId = ["mySlides1"]
+        showSlides(1, 0);
+        showSlides(1, 1);
+        
+        function plusSlides(n, no) {
+          showSlides(slideIndex[no] += n, no);
+        }
+        
+        function showSlides(n, no) {
+          var i;
+          var x = document.getElementsByClassName(slideId[no]);
+          if (n > x.length) {slideIndex[no] = 1}     //when it reaches end of array of images, goes back to first pic 
+          if (n < 1) {slideIndex[no] = x.length}
+          for (i = 0; i < x.length; i++) {  //loops through all image sof hoodies 
+             x[i].style.display = "none";  
+          }
+          x[slideIndex[no]-1].style.display = "block";  
+        }
+        </script>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+/* The background color of the whole page black */
+body{
+    background-color: black !important;
+}
+
+/* The header of the whole page (Games Booth) */
+.header{
+    background-image: linear-gradient(to left, rgb(41, 78, 121) , rgb(22, 62, 241));
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 2px;
+    color: white;
+    border: 2px solid black;
+}
+
+/*The FAQ box with the questions and answers*/
+.faqBox{
+    border: 6px solid rgb(22, 62, 241);
+    border-radius: 12px;
+    padding: 20px 35px;
+    background: white;
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+ }
+/*The more help box with the phone number, email, and available times information.*/
+ .morehelpBox{
+    border: 6px solid rgb(22, 62, 241);
+    border-radius: 12px;
+    padding: 20px 35px;
+    background: white;
+    position: absolute;
+    box-sizing: border-box;
+ }
+/*A text class where it centers text.*/
+ .centerText{
+    text-align:center;
+    margin: 0;
+    padding: 0 0 20px;
+}
+
+/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion*/
+/*
+The link above helped to create the accordions of our FAQ page.
+Below is everything associated with the accordion in the FAQ page.
+*/
+/*The accordion, where the user clicks to display the answer of the question.*/
+.accordion {
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    color: rgb(51, 51, 51);
+    cursor: pointer;
+    padding: 18px;
+    margin: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    box-shadow: 0 4px 2px -2px gray;
+  }
+  
+  /*The color of the accordion and its text when the user hovers over it.*/
+  .active, .accordion:hover {
+    background-color: rgb(22, 62, 241);
+    color: white; 
+  }
+  
+  /*The answer panel of the accordion where the text of the question is displayed.*/
+  .panel {
+    padding: 5 18px;
+    display: none;
+    background-color: rgb(221, 220, 220);
+    overflow: hidden;
+    box-shadow: 0 4px 2px -2px gray;
+    background-color: black;
+    color: white;
+  }
+
+  /*The symbol of unopened accordion (before it is clicked)*/
+  .accordion:after {
+    content: '\02795';
+    font-size: 8px;
+    color: black;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  /*The symbol of the opened accordion (after it is clicked)*/
+  .active:after {
+    content: "\2796";
+  }
+
+  /*The responsiveness of the layout for this page.*/
+  /*If the width of the page is 800px or less, then the styles below will be executed.*/
+  @media screen and (max-width: 1000px) {
+    .col-md-9{
+      text-align: center;
+      width: 100%;
+      margin-top: 500px;
+    }
+    .col-md-3{
+      
+      width: 100%;
+      text-align: center;
+      
+    }
+    .morehelpBox{
+      text-align: center;
+      margin-left: 120px;
+    }
+    
+  }
+ 

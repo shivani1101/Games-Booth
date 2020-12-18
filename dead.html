@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- This is the dead page -->
+    <title>Dead</title>
+    <meta charset="utf-8">
+    <!-- links to the rel styles and scripts -->
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery.cookie.js"></script>
+
+    <!-- script to reset counter to 0 if character dies -->
+    <script>
+        $.cookie('clicks', '0', { path: '/' });
+    </script>
+</head>
+
+<body>
+    <!-- Text for telling the user that game is over -->
+    <h1>You Died! Click to restart</h1>
+    <a href="start.html"><img src="assets/restart.png" alt="restart icon"></a>
+</body>
+
+</html>

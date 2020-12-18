@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css"> 
+
+
+    
+    <title>Games Booth</title>
+</head>
+<body>
+<nav>
+  <div class="topnav" id="myTopnav">  <!--Nav bar -->
+    <p class="logo"> GAMES BOOTH</p> 
+    <a href="#login/register" id="loginnav" onclick="loginFunction()">Login/Register</a>    <!--Each item in the nav bar has it specific id and the onlickfucntion does action with javascript -->
+    <a href="#contact" id="contactnav" onclick="contactFunction()">Contact</a>
+    <a href="#leader" id="leadernav" onclick="leaderFunction()">Leader</a>
+    <a href="#merch" id="merchnav" onclick="merchFunction()">Merchandise</a>  
+    <a href="#pop" id="popnav" onclick="popFunction()">Popular Games</a> 
+    <a href="#game" id="gamenav" onclick="gameFunction()">Game</a>
+    <a href="#about" id="aboutnav" onclick="aboutFunction()">Home</a>
+    
+    
+
+    
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</nav>
+  
+ 
+<!--About page here-->
+<div id="aboutPage">   
+<br><br><br>
+
+<!--about page-slideshow -->
+<div class="slideshow-container">  <!--used w3school containers for automatic slideshow-->
+
+  <div class="mySlides fade">
+    <img src="Images/about1.jpg" style="width:100%; height:400px;">
+    <div class="imgtitle">MYSTERY MAZE</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="Images/about2.jpg" style="width:100%; height:400px;">
+    <div class="imgtitle">Can you make it out?</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="Images/about3.jpg" style="width:100%; height:400px;">
+    <div class="imgtitle">Challange yourself</div>
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>  <!--the plusSlides function sets var to next image to allow slide show with arrows -->
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">   <!--Performs simialr showshow program for the dot -->
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+  
+<div class="aboutpara">
+  <h2 style="color: blue">OUR TEAM</h2>
+  <p >Games booth is a gaming company that develops entertaining games for Gamers. 
+    Games booth is a company developed by Ryerson University Students. 
+    Our first Published game is Maze Escape which is a textbased game where users main goal 
+    is to esacpe the maze. As our company grows, we plan on developing more fun, interactive games. 
+    
+   <br><br>
+    Additonally, our goal is not only games but also to provide users with enterataing gaming information such as 
+    trending news regarding the gaming industry. We also have a merchandise line for our Gaming 
+    hoodies which can be directly purchased on our website! 
+  </p>
+</div>
+      
+<!-- Team Container: To display every members info -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+  <h2 style="color: blue">OUR TEAM</h2>
+  <p></p>
+  
+  <div class="w3-row"><br>
+  
+  <div class="w3-quarter">
+    <img src="Images/varun.png" alt="varun" style="width:45%; background-color: rgb(100, 102, 102);" class="w3-circle w3-hover-opacity">
+    <h3 class="names" style="color:white;">Varun Patel</h3>
+    <p style="color: grey;">Fullstack Developer</p>
+    <a href="https://github.com/" ><button class="bioicon"><i class="fa fa-github-square fa-2x"></i></button></a> <!--Icons from bootsrap which go to social media link when clicked -->
+    <a href="https://www.linkedin.com/" ><button class="bioicon"><i class="fa fa-linkedin-square fa-2x"></i></button></a>
+    <a href="mailto: crazygames@gmail.com" ><button class="bioicon"><i class="fa fa-envelope-square fa-2x"></i></button></a>
+    </div>
+  
+  <div class="w3-quarter" >
+    <img src="Images/shivani.png" alt="shivani" style="width:45%; background-color: rgb(100, 102, 102);" class="w3-circle w3-hover-opacity">
+    <h3 class="names" style="color:white;">Shivani Patel</h3>
+    <p style="color: grey;">Fullstack Developer</p>
+    <a href="https://github.com/" ><button class="bioicon"><i class="fa fa-github-square fa-2x"></i></button></a>
+    <a href="https://www.linkedin.com/" ><button class="bioicon"><i class="fa fa-linkedin-square fa-2x"></i></button></a>
+    <a href="mailto: crazygames@gmail.com" ><button class="bioicon"><i class="fa fa-envelope-square fa-2x"></i></button></a>
+  </div>
+  
+  <div class="w3-quarter">
+    <img src="Images/george.png" alt="george" style="width:45%; background-color: rgb(100, 102, 102);" class="w3-circle w3-hover-opacity">
+    <h3 class="names" style="color:white;">George Saade</h3>
+    <p style="color: grey;">Fullstack Developer</p>
+    <a href="https://github.com/" ><button class="bioicon"><i class="fa fa-github-square fa-2x"></i></button></a>
+    <a href="https://www.linkedin.com/" ><button class="bioicon"><i class="fa fa-linkedin-square fa-2x"></i></button></a>
+    <a href="mailto: crazygames@gmail.com" ><button class="bioicon"><i class="fa fa-envelope-square fa-2x"></i></button></a>
+  </div>
+  
+  <div class="w3-quarter">
+    <img src="Images/justin.png" alt="justin" style="width:45%; background-color: rgb(100, 102, 102);" class="w3-circle w3-hover-opacity">
+    <h3 class="names" style="color:white;">Justin Miraflor</h3>
+    <p style="color: grey;">Fullstack Developer</p>
+    <a href="https://github.com/" ><button class="bioicon"><i class="fa fa-github-square fa-2x"></i></button></a>
+    <a href="https://www.linkedin.com/" ><button class="bioicon"><i class="fa fa-linkedin-square fa-2x"></i></button></a>
+    <a href="mailto: crazygames@gmail.com" ><button class="bioicon"><i class="fa fa-envelope-square fa-2x"></i></button></a>
+  </div>
+  
+  </div>
+  </div>
+
+
+
+<!-- NEWS AND REVIEWBAR----start-->
+
+<div class="row">
+  <div class="column" style="padding: 10px;">
+    <div class="inside" style="border: 1px solid darkred; border-radius: 10px; height: 290px;">
+        <h4 style="color: blue; text-align: center;">Trending News Headlines</h4>
+        <ul style="list-style-type:none">
+          <li class="newslist"><a href="https://www.gamespot.com/articles/fortnite-crew-is-a-12-subscription-that-gives-battle-pass-access-and-monthly-v-bucks/1100-6484821/">Fortnite Crew Is A $12 Subscription With Battle Pass Access </a></li> <br>
+          <li class="newslist"><a href="https://www.gamespot.com/articles/destiny-2-patch-notes-details-fixes-for-leveling-updates-weapon-drops/1100-6484833/">Destiny 2 Patch Notes Details Fixes For Leveling</a></li> <br>
+          <li class="newslist"><a href="https://www.gamespot.com/articles/mortal-kombat-11-adds-1995-movie-skins-in-new-dlc/1100-6484819/">Mortal Kombat 11 Adds 1995 Movie Skins In New DLC</a></li> 
+        </ul>
+        <button class="newsbutton" ><a href="news.html">Learn More</a></button>
+    </div>
+    
+  </div>
+  <div class="column" style=" padding: 10px;">
+    <div class="inside" style="border: 1px solid darkred; border-radius: 10px; height: 290px;">
+      <table style="width:100%">    <!--table is used to store the reviews of players -->
+        <h4 style="color: blue; text-align: center;">Player Reviews</h4>
+        <tr>
+          <td>Shivani1101</td>
+          <td>
+            <span class="fa fa-star checked"></span> <!--Star icon form bootsrap -->
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Smith501</td>
+          <td>
+            <span class="fa fa-star checked"></span>  
+            <span class="fa fa-star"></span>  
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>James888</td>
+          <td>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Gamerboi23</td>
+          <td>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>ciarra_123</td>
+          <td>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Bobby888</td>
+          <td>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </td>
+        </tr>
+       
+      </table>
+  </div>
+  </div>
+</div>
+<br><br>
+
+<!--Social Media Footer-->
+           
+<div class="socialmedia">
+  <a href="https://facebook.com/" ><button class="icon1"><i class="fa fa-facebook-square fa-2x"></i></button></a>  <!--social media buttons from bootstrap that links to urls-->
+  <a href="https://github.com/" ><button class="icon2"><i class="fa fa-github-square fa-2x"></i></button></a>
+  <a href="https://www.linkedin.com/" ><button class="icon3"><i class="fa fa-linkedin-square fa-2x"></i></button></a>
+  <a href="mailto: crazygames@gmail.com" ><button class="icon4"><i class="fa fa-envelope-square fa-2x"></i></button></a>
+</div>
+     
+</div>
+<div id="gamePage">
+  <h4 style="text-align: center;">WELCOME TO THE MAZE GAME.</h4>
+  
+  <iframe src="Game/start.html" title="GamesBooth" style="width: 100%; height: 600px;"></iframe> <br><br>
+  <button style="color: white; background-color: green; border: none; font-size: 40px; margin-left: 20px;" onclick="window.location.href='rules.html'">RULES</button>
+  <iframe src="dev.html" title="GamesBooth" style="width: 100%; height: 500px;" frameBorder="0"></iframe>
+  
+  
+</div>
+
+<!--Contact page-->      <!--Note: each page is on a different layer using xindex and displayed one at a time with the onlcick function in nav bar which uses js to make layers hide and appear -->
+<div id="contactPage">
+    <iframe src="contactus.html" title="merch" style="width: 100%; height: 900px" frameBorder="0"></iframe> <!--linked other members html files using a iframe to display their content-->
+   
+</div>
+
+<!--Merchandise Page-->
+<div id="merchPage">
+  <iframe src="merch.html" title="merch" style="width: 100%; height: 800px" frameBorder="0"></iframe>
+</div>
+
+<!--Popular games Page-->
+<div id="popPage">
+  <iframe src="http://webdev.scs.ryerson.ca/~s346pate/Games.php" title="games"style="width: 100%; height: 800px" frameBorder="0"></iframe>
+</div>
+<!--leader board-->
+<div id="leaderPage">
+  <iframe src="http://webdev.scs.ryerson.ca/~gsaade/leader.php" title="games"style="width: 100%; height: 800px" frameBorder="0"></iframe>
+</div>
+
+<!--Login Page-->
+<div id="loginPage">
+  <iframe src="http://webdev.scs.ryerson.ca/~jmiraflo/finalproj/login.php" title="games"style="width: 100%; height: 800px" frameBorder="0"></iframe>
+</div>
+<br>
+
+<!--Footer-->
+<footer style="text-align: center; color: white; font-size: 10px; background-color: blue;">
+  copyrights @Games Booth 2020 <br>
+  <a href="faqpage.html"> Frequently Asked Questions FAQ</a>
+</footer>
+<br>
+  <script src="script.js"></script>  <!--links html to javascript-->
+
+</body>
+</html>

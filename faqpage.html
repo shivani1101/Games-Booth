@@ -1,0 +1,103 @@
+<html>
+
+<head>
+<title>GamesBooth - FAQ</title>
+<!--The link to the external css file for the FAQ page-->
+<link href="faqpageStyle.css" rel="stylesheet">
+<!--The link for bootstrap-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<meta charset="UTF-8">
+
+</head>
+
+<body>
+<h1 class='centerText header'>Games Booth</h1>
+<br><br>
+<h2 class='centerText' style="color:white;"> Frequently Asked Questions (FAQ)</h2>
+<br><br>
+
+<!--The more help box and the FAQ box will be within a container-->
+<div class='container'>
+    <div class="row">
+        <!--The FAQ box will take 25% of the space of the container.-->
+        <div class='col-md-3'>
+            <div class='morehelpBox'>
+                <div class='centerText'>
+                <h4>Need more help? <br> Contact Us</h4>
+                <hr>
+                <p>(416)-XXX-XXXX</p>
+                <p>Emailme@email.com</p>
+                <hr>
+                <p>Available Times:</p>
+                <p>Monday - Friday <br> 8am - 5pm</p>
+                </div>
+            </div>
+        </div>
+
+        <!--The FAQ box will take 75% of the space of the container.-->
+        <div class='col-md-9'>
+            <div class='faqBox'>
+                
+                <!--Each Question will be shown as an accordion button where the user is able to click on it and display its corresponding panel with the answer to the question.-->
+                <button class="accordion">How do I save my scores for the games I play?</button>
+                <div class="panel">
+                    <p>Create an account on our login/register page.</p>
+                </div>
+
+                <button class="accordion">Where can I find the developers information?</button>
+                <div class="panel">
+                    <p>It can be found in the home page.</p>
+                </div>
+
+                <button class="accordion">I want to buy some merch, how much will it cost?</button>
+                <div class="panel">
+                    <p>All the information for our merch can be found under the "Merchandise" page which is located on the nav bar.</p>
+                </div>
+
+                <button class="accordion">I don't know how to play the maze game, what do I do?</button>
+                <div class="panel">
+                    <p>The rules of the game can be found in the rules tab below the game.</p>
+                </div>
+
+                <button class="accordion">Will my personal information from my user profile be seen by others?</button>
+                <div class="panel">
+                    <p>Your username will be the only one that can be seen by others.</p>
+                </div>
+
+                <button class="accordion">How fast is the shipping for the merch?</button>
+                <div class="panel">
+                    <p>Depending on where you live, delivery can be anytime around 7-20 business days.</p>
+                </div>
+
+                <button class="accordion">Will there be more colour options for the merch in the future?</button>
+                <div class="panel">
+                    <p>We are planning on releasing more colours soon!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion-->
+<!--This is the javascript for the accordion to work-->
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>
+
+</body>
+
+</html>
